@@ -3,29 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İclal Çetin - İletişim</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>İletişim | İclal Çetin</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>İletişim</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="about.html">Hakkımda</a></li>
+                <li><a href="portfolio.html">Portföy</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="testimonials.html">Referanslar</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="about.html">Hakkımda</a></li>
-            <li><a href="projects.html">Projeler</a></li>
-            <li><a href="publications.html">Yayınlar</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h2>Benimle İletişime Geçin</h2>
-        <p>Email: iclal@example.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/iclal-cetin/">İclal Çetin</a></p>
-        <p>GitHub: <a href="https://github.com/iclal">İclal Çetin</a></p>
+
+    <section id="contact">
+        <h1>İletişim</h1>
+        <form action="#" method="post">
+            <label for="name">Adınız:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mesajınız:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Gönder</button>
+        </form>
     </section>
-    <footer>
-        <p>&copy; 2024 İclal Çetin</p>
-    </footer>
 </body>
 </html>
