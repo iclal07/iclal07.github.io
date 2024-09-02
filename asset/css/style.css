@@ -1,45 +1,136 @@
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column; /* Tüm içeriği dikey hizalama */
+    align-items: center; /* Tüm içeriği yatayda ortala */
 }
 
 header {
     background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    color: white;
+    width: 100%; /* Gezinti çubuğunu tüm genişlikte yap */
+    position: fixed; /* Sabit pozisyonda kal */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Diğer içeriklerin altında kalmasın */
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
     padding: 0;
-    text-align: center;
-    background-color: #444;
+    display: flex;
+    justify-content: center; /* Gezinti öğelerini yatayda ortala */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
+    padding: 15px 20px;
+    display: block;
 }
 
-section {
-    padding: 20px;
+nav ul li a:hover {
+    background-color: #555; /* Üzerine gelindiğinde arka plan rengi değişsin */
+}
+
+main {
+    padding: 80px 20px; /* Gezinme çubuğuna yer açmak için üst boşluk bırak */
+    margin-top: 60px; /* Gezinme çubuğuna yer açmak için üst boşluk bırak */
+    display: flex;
+    flex-direction: column; /* Dikey hizalama */
+    align-items: center; /* Yatayda ortala */
+    text-align: center; /* Metinleri ortala */
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+    font-size: 1.1em;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.project, article, blockquote {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     margin: 20px;
+    padding: 20px;
+    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Metni ortala */
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Formu ortala */
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+form button:hover {
+    background-color: #0056b3;
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
     background-color: #333;
-    color: #fff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
     position: fixed;
     bottom: 0;
-    width: 100%;
 }
