@@ -1,35 +1,49 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İclal Çetin - Ana Sayfa</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Experience Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>İclal Çetin</h1>
-        <p>AI/ML Engineer | Computer Engineer</p>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">about me</a></li>
+                <li><a href="#" class="active">EXPERIENCE</a></li>
+                <li><a href="#">EDUCATION</a></li>
+                <li><a href="#">CERTIFICATES</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="about.html">Hakkımda</a></li>
-            <li><a href="projects.html">Projeler</a></li>
-            <li><a href="publications.html">Yayınlar</a></li>
-            <li><a href="contact.html">İletişim</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h2>Hoşgeldiniz!</h2>
-        <p>Ben İclal Çetin. Yapay zeka ve makine öğrenimi alanlarında uzmanlaşmış bir bilgisayar mühendisiyim.</p>
-        <h3>Öne Çıkan Projeler</h3>
-        <ul>
-            <li><a href="projects.html#proje1">Proje 1</a> - Proje açıklaması</li>
-            <li><a href="projects.html#proje2">Proje 2</a> - Proje açıklaması</li>
-        </ul>
-    </section>
-    <footer>
-        <p>&copy; 2024 İclal Çetin</p>
-    </footer>
+    
+    <main>
+        <section class="experience">
+            <div class="experience-item">
+                <h2>VolareVers</h2>
+                <h3>AI/ML Engineer</h3>
+                <p>June 2023 - August 2024</p>
+                <ul>
+                    <li><strong>Recommendation System:</strong> I developed complex recommendation systems to make recommendations based on users' preferences. By analyzing user behavior data, I modeled personalized product and service recommendations.</li>
+                    <li><strong>Voice LLM Chatbot:</strong> I created a chatbot that can detect and respond to voice commands using natural language processing techniques. In this project, I integrated language models and voice recognition systems to increase its ability to understand user questions and respond with accurate information.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <h2>De Jure AI</h2>
+                <h3>AI Engineer</h3>
+                <ul>
+                    <li><strong>Optical Character Recognition (OCR):</strong> I developed advanced OCR systems for text recognition and digitization. I played a key role in extracting data from various document types and converting this data into processable formats.</li>
+                    <li><strong>Object Detection:</strong> I utilized established deep learning models and applied transfer learning techniques to provide object recognition and classification capabilities from image data.</li>
+                    <li><strong>Natural Language Processing (NLP):</strong> I used various NLP techniques to analyze text data. For Named Entity Recognition (NER) projects, I experimented with different language models to achieve the most effective results.</li>
+                    <li><strong>AI Development Processes:</strong> I actively participated in all stages of AI projects; managing data collection, labeling, data preparation, and modeling processes. Throughout these projects, I conducted necessary optimizations to maximize model performance.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
